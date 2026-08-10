@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal informativo para colaboradores de YILCOQUE S.A.S.">
+  <title>YILCOQUE S.A.S. | Portal para Colaboradores</title>
+  <link rel="icon" href="assets/logo-yilcoque.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="YILCOQUE S.A.S. Inicio">
+      <img src="assets/logo-yilcoque.svg" alt="YILCOQUE S.A.S.">
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#recursos">Documentación</a>
+      <a href="#comunicados">Comunicados</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">PORTAL PARA COLABORADORES</p>
+        <h1>Conexión y<br>energía para el<br>talento</h1>
+        <p class="hero-text">
+          YILCOQUE S.A.S. facilita el acceso a recursos importantes,
+          información institucional y herramientas para el desarrollo
+          profesional de su equipo.
+        </p>
+        <a class="btn btn-primary" href="#recursos">Explorar recursos</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="mountain m1"></div>
+        <div class="mountain m2"></div>
+        <div class="ground"></div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="resources section-light" id="recursos">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="eyebrow dark">INFORMACIÓN Y RECURSOS</p>
+          <h2>Recursos para Empleados</h2>
+          <p>Encuentra rápidamente la información que necesitas.</p>
+        </div>
+
+        <div class="resource-grid">
+          <button class="resource-card" data-modal="gestion">
+            <span class="card-icon">✓</span>
+            <strong>Sistema de<br>Gestión</strong>
+            <span class="card-arrow">→</span>
+          </button>
+
+          <button class="resource-card" data-modal="laboral">
+            <span class="card-icon">⚖</span>
+            <strong>Regulaciones<br>Laborales</strong>
+            <span class="card-arrow">→</span>
+          </button>
+
+          <button class="resource-card" data-modal="documentos">
+            <span class="card-icon">▤</span>
+            <strong>Documentos<br>Importantes</strong>
+            <span class="card-arrow">→</span>
+          </button>
+
+          <button class="resource-card" data-modal="contactos">
+            <span class="card-icon">●</span>
+            <strong>Contactos del<br>Equipo</strong>
+            <span class="card-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DERECHOS -->
+    <section class="rights section-dark">
+      <div class="container split">
+        <div class="split-copy">
+          <p class="eyebrow">INFORMACIÓN PARA TODOS</p>
+          <h2>Tus derechos son<br>nuestra prioridad</h2>
+          <p>
+            Consulta información sobre derechos, deberes, reglamentos,
+            políticas internas y recursos disponibles para nuestros
+            colaboradores.
+          </p>
+          <a class="btn btn-primary" href="#derechos">Conoce más</a>
+        </div>
+
+        <div class="meeting-image">
+          <img src="assets/imagen-corporativa.svg" alt="Ilustración corporativa de colaboradores">
+        </div>
+      </div>
+    </section>
+
+    <!-- DERECHOS Y RECURSOS -->
+    <section class="rights-detail section-light" id="derechos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">DERECHOS Y RECURSOS</p>
+          <h2>Información clara y accesible</h2>
+          <p>
+            Esta sección puede convertirse en el punto central para publicar
+            reglamentos, políticas y recursos de consulta para los empleados.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article>
+            <span class="number">01</span>
+            <h3>Derechos laborales</h3>
+            <p>Espacio para reglamentos, derechos, deberes y documentos de consulta.</p>
+            <a href="#recursos">Consultar →</a>
+          </article>
+          <article>
+            <span class="number">02</span>
+            <h3>Sistema de Gestión</h3>
+            <p>Políticas, procedimientos, manuales, formatos y documentos vigentes.</p>
+            <a href="#recursos">Consultar →</a>
+          </article>
+          <article>
+            <span class="number">03</span>
+            <h3>Seguridad y Salud</h3>
+            <p>Información de SST, prevención, emergencias y recursos de seguridad.</p>
+            <a href="#recursos">Consultar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMUNICADOS -->
+    <section class="updates section-dark" id="comunicados">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ACTUALIDAD</p>
+          <h2>Comunicados y novedades</h2>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <span>COMUNICADO</span>
+            <h3>Información importante para colaboradores</h3>
+            <p>Este espacio puede utilizarse para publicar novedades y comunicaciones internas.</p>
+            <a href="#contactos">Ver información →</a>
+          </article>
+          <article class="news-card">
+            <span>RECURSO</span>
+            <h3>Nuevos documentos disponibles</h3>
+            <p>Publica aquí avisos sobre nuevos procedimientos, formatos o documentos actualizados.</p>
+            <a href="#recursos">Consultar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTOS -->
+    <section class="contacts section-light" id="contactos">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="eyebrow dark">DIRECTORIO</p>
+          <h2>Contactos del equipo</h2>
+          <p>Reemplaza estos datos de ejemplo por los contactos oficiales de YILCOQUE.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="avatar">TH</div>
+            <h3>Talento Humano</h3>
+            <p>Información laboral y atención a colaboradores.</p>
+            <a href="mailto:talentohumano@yilcoque.info">talentohumano@yilcoque.info</a>
+          </div>
+          <div class="contact-card">
+            <div class="avatar">SG</div>
+            <h3>Sistema de Gestión</h3>
+            <p>Documentación, procesos y sistema de gestión.</p>
+            <a href="mailto:gestion@yilcoque.info">gestion@yilcoque.info</a>
+          </div>
+          <div class="contact-card">
+            <div class="avatar">TI</div>
+            <h3>Tecnología</h3>
+            <p>Soporte para sistemas y herramientas tecnológicas.</p>
+            <a href="mailto:soporte@yilcoque.info">soporte@yilcoque.info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/logo-yilcoque.svg" alt="YILCOQUE S.A.S." class="footer-logo">
+        <p>Portal informativo para colaboradores.</p>
+      </div>
+      <div>
+        <p>© <span id="year"></span> YILCOQUE S.A.S.</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+      <p class="eyebrow dark">RECURSOS</p>
+      <h2 id="modalTitle">Recursos</h2>
+      <p id="modalText"></p>
+      <div id="modalLinks" class="modal-links"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
