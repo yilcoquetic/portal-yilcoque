@@ -215,7 +215,7 @@ button{font:inherit}
 
 footer{background:#090f1f;color:#aeb8c9;padding:35px 0}
 .footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center}
-.footer-logo{width:125px;filter:brightness(0) invert(1);margin-bottom:8px}
+.footer-logo{width:125px;margin-bottom:8px;background:#fff;padding:6px;border-radius:6px}
 .footer-inner p{margin:2px 0;font-size:12px}
 
 .modal{
