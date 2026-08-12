@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <rect width="900" height="650" fill="#e7ebf1"/>
+  <rect y="455" width="900" height="195" fill="#d7dde6"/>
+  <rect x="80" y="95" width="740" height="360" rx="8" fill="#f8fafc"/>
+  <rect x="120" y="130" width="250" height="275" fill="#c7d2df"/>
+  <rect x="390" y="130" width="390" height="275" fill="#dfe6ee"/>
+  <circle cx="505" cy="225" r="45" fill="#0e172d"/>
+  <circle cx="625" cy="225" r="45" fill="#ff7415"/>
+  <circle cx="705" cy="315" r="42" fill="#0e172d"/>
+  <circle cx="425" cy="315" r="42" fill="#ff7415"/>
+  <rect x="460" y="280" width="110" height="18" rx="9" fill="#9ba8b8"/>
+  <rect x="580" y="280" width="110" height="18" rx="9" fill="#9ba8b8"/>
+  <rect x="400" y="370" width="300" height="15" rx="7" fill="#b0bac7"/>
+  <text x="450" y="555" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0e172d">YILCOQUE S.A.S.</text>
+  <text x="350" y="595" font-family="Arial, sans-serif" font-size="18" fill="#647084">Personas • Procesos • Energía</text>
+</svg>

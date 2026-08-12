@@ -7,7 +7,7 @@ Portal informativo para colaboradores, preparado para publicarse gratuitamente c
 - `index.html` → estructura y contenido de la página.
 - `styles.css` → diseño, colores y versión móvil.
 - `script.js` → menú móvil, tarjetas y ventanas emergentes.
-- `assets/logo-yilcoque.svg` → logo provisional editable.
+- `assets/logo-yilcoque.png` → logo oficial proporcionado por YILCOQUE, con fondo transparente.
 - `assets/imagen-corporativa.svg` → imagen provisional editable.
 - `CNAME` → preparado para `yilcoque.info`.
 
