@@ -1,47 +1,22 @@
-# Portal YILCOQUE S.A.S.
+PORTAL YILCOQUE S.A.S. - V3 DOCUMENTOS CONECTADOS
+================================================
 
-Portal informativo para colaboradores, preparado para publicarse gratuitamente con GitHub Pages.
+Esta versión organiza el portal como Centro de Información para Colaboradores.
 
-## Archivos
+Categorías:
+1. Seguridad y Salud en el Trabajo (4 documentos)
+2. Convivencia y Respeto (3 documentos)
+3. Seguridad Vial (1 documento)
+4. Relaciones Laborales (1 documento)
 
-- `index.html` → estructura y contenido de la página.
-- `styles.css` → diseño, colores y versión móvil.
-- `script.js` → menú móvil, tarjetas y ventanas emergentes.
-- `assets/logo-yilcoque.png` → logo oficial proporcionado por YILCOQUE, con fondo transparente.
-- `assets/imagen-corporativa.svg` → imagen provisional editable.
-- `CNAME` → preparado para `yilcoque.info`.
+Los botones "Ver documento" abren el visor de Google Drive mediante /preview.
+No se descargan ni se almacenan los PDF en GitHub.
 
-## IMPORTANTE
+IMPORTANTE SOBRE DESCARGAS:
+El portal no muestra un botón propio de descarga. Para reforzar la consulta
+sin descarga/impresión/copia, cada archivo debe tener en Google Drive las
+restricciones de lector correspondientes. Google Drive aplica esas restricciones
+por archivo.
 
-Los textos, correos y documentos incluidos son ejemplos. Antes de publicar el sitio para uso real, reemplaza:
-- correos de ejemplo;
-- información de contacto;
-- documentos;
-- políticas;
-- textos institucionales;
-- logo provisional.
-
-No publiques documentos confidenciales o datos personales sin implementar primero el control de acceso apropiado.
-
-## Publicación en GitHub Pages
-
-1. Crea una cuenta en https://github.com/ si no tienes una.
-2. Crea un repositorio público llamado `portal-yilcoque`.
-3. Sube todos los archivos y carpetas de esta carpeta.
-4. Ve a `Settings` → `Pages`.
-5. En `Build and deployment`, selecciona `Deploy from a branch`.
-6. Selecciona `main` y `/ (root)`.
-7. Pulsa `Save`.
-8. GitHub mostrará una dirección parecida a:
-   `https://TUUSUARIO.github.io/portal-yilcoque/`
-
-## Dominio personalizado
-
-Después de verificar que la página funciona, en `Settings` → `Pages` escribe:
-
-`yilcoque.info`
-
-Guarda y espera a que GitHub indique que el dominio está configurado.
-
-En Wix, entra a los DNS de `yilcoque.info` y coloca exactamente los registros que GitHub te indique. No borres registros de correo (MX/TXT) si el dominio se usa para correo electrónico.
-
+Dominio:
+CNAME: yilcoque.info

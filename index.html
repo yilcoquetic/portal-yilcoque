@@ -1,225 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portal informativo para colaboradores de YILCOQUE S.A.S.">
-  <title>YILCOQUE S.A.S. | Portal para Colaboradores</title>
-  <link rel="icon" href="assets/logo-yilcoque.png" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portal de información para colaboradores de YILCOQUE S.A.S.">
+<title>YILCOQUE S.A.S. | Portal para Colaboradores</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="YILCOQUE S.A.S. Inicio">
-      <img src="assets/logo-yilcoque.png" alt="YILCOQUE S.A.S.">
-    </a>
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="YILCOQUE S.A.S. Inicio">
+    <img src="assets/logo-yilcoque.png" alt="YILCOQUE S.A.S.">
+  </a>
+  <nav class="nav" id="mainNav">
+    <a href="index.html">Inicio</a>
+    <a href="documentacion.html">Documentación</a>
+    <a href="index.html#comunicados">Comunicados</a>
+    <a href="index.html#contactos">Contactos</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+</header>
 
-    <nav class="nav" id="mainNav">
-      <a href="#inicio">Inicio</a>
-      <a href="#recursos">Documentación</a>
-      <a href="#comunicados">Comunicados</a>
-      <a href="#contactos">Contactos</a>
-    </nav>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-      <div class="hero-content">
-        <p class="eyebrow">PORTAL PARA COLABORADORES</p>
-        <h1>Conexión y<br>energía para el<br>talento</h1>
-        <p class="hero-text">
-          YILCOQUE S.A.S. facilita el acceso a recursos importantes,
-          información institucional y herramientas para el desarrollo
-          profesional de su equipo.
-        </p>
-        <a class="btn btn-primary" href="#recursos">Explorar recursos</a>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="sun"></div>
-        <div class="mountain m1"></div>
-        <div class="mountain m2"></div>
-        <div class="ground"></div>
-      </div>
-    </section>
-
-    <!-- RECURSOS -->
-    <section class="resources section-light" id="recursos">
-      <div class="container">
-        <div class="section-heading center">
-          <p class="eyebrow dark">INFORMACIÓN Y RECURSOS</p>
-          <h2>Recursos para Empleados</h2>
-          <p>Encuentra rápidamente la información que necesitas.</p>
-        </div>
-
-        <div class="resource-grid">
-          <button class="resource-card" data-modal="gestion">
-            <span class="card-icon">✓</span>
-            <strong>Sistema de<br>Gestión</strong>
-            <span class="card-arrow">→</span>
-          </button>
-
-          <button class="resource-card" data-modal="laboral">
-            <span class="card-icon">⚖</span>
-            <strong>Regulaciones<br>Laborales</strong>
-            <span class="card-arrow">→</span>
-          </button>
-
-          <button class="resource-card" data-modal="documentos">
-            <span class="card-icon">▤</span>
-            <strong>Documentos<br>Importantes</strong>
-            <span class="card-arrow">→</span>
-          </button>
-
-          <button class="resource-card" data-modal="contactos">
-            <span class="card-icon">●</span>
-            <strong>Contactos del<br>Equipo</strong>
-            <span class="card-arrow">→</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- DERECHOS -->
-    <section class="rights section-dark">
-      <div class="container split">
-        <div class="split-copy">
-          <p class="eyebrow">INFORMACIÓN PARA TODOS</p>
-          <h2>Tus derechos son<br>nuestra prioridad</h2>
-          <p>
-            Consulta información sobre derechos, deberes, reglamentos,
-            políticas internas y recursos disponibles para nuestros
-            colaboradores.
-          </p>
-          <a class="btn btn-primary" href="#derechos">Conoce más</a>
-        </div>
-
-        <div class="meeting-image">
-          <img src="assets/imagen-corporativa.svg" alt="Ilustración corporativa de colaboradores">
-        </div>
-      </div>
-    </section>
-
-    <!-- DERECHOS Y RECURSOS -->
-    <section class="rights-detail section-light" id="derechos">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow dark">DERECHOS Y RECURSOS</p>
-          <h2>Información clara y accesible</h2>
-          <p>
-            Esta sección puede convertirse en el punto central para publicar
-            reglamentos, políticas y recursos de consulta para los empleados.
-          </p>
-        </div>
-
-        <div class="info-grid">
-          <article>
-            <span class="number">01</span>
-            <h3>Derechos laborales</h3>
-            <p>Espacio para reglamentos, derechos, deberes y documentos de consulta.</p>
-            <a href="#recursos">Consultar →</a>
-          </article>
-          <article>
-            <span class="number">02</span>
-            <h3>Sistema de Gestión</h3>
-            <p>Políticas, procedimientos, manuales, formatos y documentos vigentes.</p>
-            <a href="#recursos">Consultar →</a>
-          </article>
-          <article>
-            <span class="number">03</span>
-            <h3>Seguridad y Salud</h3>
-            <p>Información de SST, prevención, emergencias y recursos de seguridad.</p>
-            <a href="#recursos">Consultar →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMUNICADOS -->
-    <section class="updates section-dark" id="comunicados">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">ACTUALIDAD</p>
-          <h2>Comunicados y novedades</h2>
-        </div>
-
-        <div class="news-grid">
-          <article class="news-card">
-            <span>COMUNICADO</span>
-            <h3>Información importante para colaboradores</h3>
-            <p>Este espacio puede utilizarse para publicar novedades y comunicaciones internas.</p>
-            <a href="#contactos">Ver información →</a>
-          </article>
-          <article class="news-card">
-            <span>RECURSO</span>
-            <h3>Nuevos documentos disponibles</h3>
-            <p>Publica aquí avisos sobre nuevos procedimientos, formatos o documentos actualizados.</p>
-            <a href="#recursos">Consultar →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTOS -->
-    <section class="contacts section-light" id="contactos">
-      <div class="container">
-        <div class="section-heading center">
-          <p class="eyebrow dark">DIRECTORIO</p>
-          <h2>Contactos del equipo</h2>
-          <p>Reemplaza estos datos de ejemplo por los contactos oficiales de YILCOQUE.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <div class="avatar">TH</div>
-            <h3>Talento Humano</h3>
-            <p>Información laboral y atención a colaboradores.</p>
-            <a href="mailto:talentohumano@yilcoque.info">talentohumano@yilcoque.info</a>
-          </div>
-          <div class="contact-card">
-            <div class="avatar">SG</div>
-            <h3>Sistema de Gestión</h3>
-            <p>Documentación, procesos y sistema de gestión.</p>
-            <a href="mailto:gestion@yilcoque.info">gestion@yilcoque.info</a>
-          </div>
-          <div class="contact-card">
-            <div class="avatar">TI</div>
-            <h3>Tecnología</h3>
-            <p>Soporte para sistemas y herramientas tecnológicas.</p>
-            <a href="mailto:soporte@yilcoque.info">soporte@yilcoque.info</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <img src="assets/logo-yilcoque.png" alt="YILCOQUE S.A.S." class="footer-logo">
-        <p>Portal informativo para colaboradores.</p>
-      </div>
-      <div>
-        <p>© <span id="year"></span> YILCOQUE S.A.S.</p>
-        <p>Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- MODAL -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
-      <p class="eyebrow dark">RECURSOS</p>
-      <h2 id="modalTitle">Recursos</h2>
-      <p id="modalText"></p>
-      <div id="modalLinks" class="modal-links"></div>
-    </div>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <p class="eyebrow">PORTAL DE INFORMACIÓN PARA COLABORADORES</p>
+    <h1>Conexión y<br>energía para el<br>talento</h1>
+    <p class="hero-text">Un espacio para consultar de forma sencilla políticas, reglamentos, documentos y recursos importantes de YILCOQUE S.A.S.</p>
+    <a class="btn btn-primary" href="documentacion.html">Explorar documentación</a>
   </div>
+  <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="ground"></div></div>
+</section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="section section-light">
+ <div class="container">
+  <div class="section-heading center">
+   <p class="eyebrow dark">INFORMACIÓN PARA TODOS</p>
+   <h2>Encuentra lo que necesitas</h2>
+   <p>Consulta los documentos organizados por temas para facilitar su búsqueda.</p>
+  </div>
+  <div class="category-grid">
+   <a class="category-card" href="seguridad-salud.html"><span class="icon">🦺</span><strong>Seguridad y<br>Salud</strong><small>4 documentos</small></a>
+   <a class="category-card" href="convivencia-respeto.html"><span class="icon">🤝</span><strong>Convivencia<br>y Respeto</strong><small>3 documentos</small></a>
+   <a class="category-card" href="seguridad-vial.html"><span class="icon">🚗</span><strong>Seguridad<br>Vial</strong><small>1 documentos</small></a>
+   <a class="category-card" href="relaciones-laborales.html"><span class="icon">👥</span><strong>Relaciones<br>Laborales</strong><small>1 documentos</small></a>
+  </div>
+ </div>
+</section>
+
+<section class="section section-dark" id="comunicados">
+ <div class="container info-split">
+  <div>
+   <p class="eyebrow">TU INFORMACIÓN, SIEMPRE A LA MANO</p>
+   <h2>Tus derechos son nuestra prioridad</h2>
+   <p>Este portal reúne información de consulta para nuestros colaboradores y facilita el acceso a documentos institucionales, políticas y reglamentos.</p>
+   <a class="btn btn-primary" href="documentacion.html">Ver documentación</a>
+  </div>
+  <img src="assets/imagen-corporativa.svg" alt="YILCOQUE">
+ </div>
+</section>
+
+<section class="section section-light" id="contactos">
+ <div class="container">
+  <div class="section-heading">
+   <p class="eyebrow dark">CONTACTO</p>
+   <h2>¿Necesitas ayuda?</h2>
+   <p>Próximamente podremos incorporar aquí los contactos de Talento Humano, SST, Sistema de Gestión y demás áreas de apoyo.</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+  <strong>YILCOQUE S.A.S.</strong><br>
+  Portal de Información para Colaboradores · Información para consulta
+</footer>
+
+<script src="script.js"></script>
+</body></html>
