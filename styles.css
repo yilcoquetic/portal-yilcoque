@@ -22,7 +22,7 @@ button{font:inherit}
 .nav{display:flex;gap:30px;align-items:center;font-size:14px;color:#4b5565}
 .nav a:hover{color:var(--orange)}
 .menu-btn{display:none;border:0;background:none;font-size:25px;color:var(--navy);cursor:pointer}
-.hero{min-height:510px;background:linear-gradient(120deg,#0e1424,#252b38);color:white;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero{min-height:510px;background:linear-gradient(rgba(10,15,25,.55),rgba(10,15,25,.65)),url("assets/fondo-principal.jpg") center/cover no-repeat;
 .hero-content{width:min(650px,90%);margin-left:8%;position:relative;z-index:2;padding:70px 0}
 .eyebrow{font-size:12px;letter-spacing:1.8px;font-weight:800;margin:0 0 12px;color:#ff9b43}
 .eyebrow.dark{color:var(--orange)}
