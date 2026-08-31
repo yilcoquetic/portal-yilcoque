@@ -103,3 +103,15 @@ footer strong{color:white}
  .document-card{align-items:flex-start;flex-direction:column}
  .view-btn{width:100%}
 }
+
+/* Actualización visual V4 */
+.svg-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
+.svg-icon svg{width:52px;height:52px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.help-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.help-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:center;box-shadow:0 4px 14px rgba(16,23,42,.04);transition:.2s}
+.help-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.help-card strong{display:block;font-size:16px}.help-card span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.help-card b{font-size:12px;color:var(--orange);white-space:nowrap}
+.help-icon{width:44px;height:44px;border-radius:12px;background:#fff1e6;color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:23px;font-weight:900}
+.help-icon.whatsapp{background:#eaf8ef;color:#1b9b55}
+.floating-wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#1b9b55;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:900;box-shadow:0 10px 25px rgba(16,23,42,.22);z-index:60}
+@media(max-width:650px){.help-grid{grid-template-columns:1fr}.help-card{grid-template-columns:44px 1fr}.help-card b{grid-column:2}}

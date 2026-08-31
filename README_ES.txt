@@ -1,22 +1,33 @@
-PORTAL YILCOQUE S.A.S. - V3 DOCUMENTOS CONECTADOS
-================================================
+PORTAL YILCOQUE S.A.S. - V4
+============================
+Incluye:
+- 4 categorías documentales.
+- 9 documentos conectados a Google Drive.
+- Área de Ayuda y Contacto.
+- WhatsApp Recursos Humanos y SST.
+- Web oficial, Facebook e Instagram.
+- Iconos visuales renovados.
+- Botón flotante de WhatsApp.
 
-Esta versión organiza el portal como Centro de Información para Colaboradores.
+CAMBIAR EL TITULO PRINCIPAL
+---------------------------
+En index.html busca:
+<h1 id="heroTitle">Centro de Información<br>para Colaboradores</h1>
+Cambia solamente el texto dentro de <h1>...</h1>.
 
-Categorías:
-1. Seguridad y Salud en el Trabajo (4 documentos)
-2. Convivencia y Respeto (3 documentos)
-3. Seguridad Vial (1 documento)
-4. Relaciones Laborales (1 documento)
+CAMBIAR LOS CONTACTOS
+---------------------
+Recursos Humanos: https://wa.me/573168337383
+SST: https://wa.me/573125458700
 
-Los botones "Ver documento" abren el visor de Google Drive mediante /preview.
-No se descargan ni se almacenan los PDF en GitHub.
+CAMBIAR REDES
+-------------
+Web: https://www.yilcoque.com
+Facebook: https://www.facebook.com/yilcoque/photos/
+Instagram: https://www.instagram.com/yilcoquesas/
 
-IMPORTANTE SOBRE DESCARGAS:
-El portal no muestra un botón propio de descarga. Para reforzar la consulta
-sin descarga/impresión/copia, cada archivo debe tener en Google Drive las
-restricciones de lector correspondientes. Google Drive aplica esas restricciones
-por archivo.
-
-Dominio:
-CNAME: yilcoque.info
+NOTA
+----
+Los PDF siguen alojados en Google Drive. El portal solo los visualiza mediante
+los enlaces /preview. Las restricciones de descarga/impresión/copia se
+controlan desde Google Drive.
