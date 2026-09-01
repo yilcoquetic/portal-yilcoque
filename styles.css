@@ -467,3 +467,13 @@ a.floating-wa svg {
   display: block !important;
   stroke: none !important;
 }
+
+/* Eliminar sombra oscura de los subtítulos naranjas */
+.section-subtitle,
+.kicker,
+.tag,
+.subtitle {
+  text-shadow: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
