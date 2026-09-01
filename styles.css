@@ -25,10 +25,9 @@ button{font:inherit}
 /* --- SECCIÓN PRINCIPAL (HERO) CON IMAGEN DE FONDO --- */
 .hero {
   min-height: 510px;
-  /* Imagen de fondo con overlay oscuro para asegurar legibilidad */
   background: linear-gradient(rgba(16, 23, 42, 0.75), rgba(16, 23, 42, 0.75)), 
-              url('fondo-principal.jpg') center/cover no-repeat;
-  color: #ffffff; /* Texto global en blanco */
+              url('assets/fondo-principal.jpg') center/cover no-repeat;
+  color: #ffffff;
   display: flex;
   align-items: center;
   position: relative;
