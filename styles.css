@@ -254,14 +254,97 @@ footer strong{color:white}
 /* Actualización visual V4 */
 .svg-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
 .svg-icon svg{width:52px;height:52px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.help-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.help-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:center;box-shadow:0 4px 14px rgba(16,23,42,.04);transition:.2s}
-.help-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.help-card strong{display:block;font-size:16px}.help-card span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.help-card b{font-size:12px;color:var(--orange);white-space:nowrap}
-.help-icon{width:44px;height:44px;border-radius:12px;background:#fff1e6;color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:23px;font-weight:900}
-.help-icon.whatsapp{background:#eaf8ef;color:#1b9b55}
-.floating-wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#1b9b55;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:900;box-shadow:0 10px 25px rgba(16,23,42,.22);z-index:60}
-@media(max-width:650px){.help-grid{grid-template-columns:1fr}.help-card{grid-template-columns:44px 1fr}.help-card b{grid-column:2}}
+/* --- SECCIÓN AYUDA Y CONTACTO PROFESIONAL --- */
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Para que la tarjeta Web quede centrada ocupando 2 columnas en PC si hay un número impar */
+.help-card.web {
+  grid-column: span 2;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.help-card {
+  background: #ffffff;
+  border: 1px solid var(--line, #e4e8ef);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(16, 23, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(16, 23, 42, 0.1);
+}
+
+/* Iconos contenedores */
+.help-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.help-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Estilos por marca/red */
+.help-card.wa .help-icon { background: #eaf8ef; color: #25D366; }
+.help-card.wa:hover { border-color: #25D366; }
+.help-card.wa b { color: #25D366; }
+
+.help-card.web .help-icon { background: #fff5eb; color: var(--orange, #ee7600); }
+.help-card.web:hover { border-color: var(--orange, #ee7600); }
+.help-card.web b { color: var(--orange, #ee7600); }
+
+.help-card.fb .help-icon { background: #ebf3ff; color: #1877F2; }
+.help-card.fb:hover { border-color: #1877F2; }
+.help-card.fb b { color: #1877F2; }
+
+.help-card.ig .help-icon { background: #fdf0f5; color: #E4405F; }
+.help-card.ig:hover { border-color: #E4405F; }
+.help-card.ig b { color: #E4405F; }
+
+/* Textos dentro de la tarjeta */
+.help-card strong {
+  display: block;
+  font-size: 16px;
+  color: var(--text, #182033);
+}
+
+.help-card span {
+  display: block;
+  color: var(--muted, #667085);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.help-card b {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Adaptación móvil */
+@media(max-width: 768px) {
+  .help-grid { grid-template-columns: 1fr; }
+  .help-card.web { grid-column: span 1; width: 100%; }
+}
 
 /* --- CARRUSEL AUTOMÁTICO EN INFO-SPLIT --- */
 .slider-container {
