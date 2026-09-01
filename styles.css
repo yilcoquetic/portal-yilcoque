@@ -56,11 +56,21 @@ button{font:inherit}
   margin: 0 0 12px;
   color: #ee7600; /* Naranja institucional */
   text-transform: uppercase;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: none !important; /* Elimina la sombra oscura */
 }
 
 .eyebrow.dark {
   color: #ee7600;
+  text-shadow: none !important;
+}
+
+/* Regla preventiva para cualquier otro subtítulo en naranja */
+.section-subtitle,
+.subtitle,
+.kicker {
+  color: #ee7600;
+  text-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /* Título principal en blanco brillante con sombra para alta legibilidad */
