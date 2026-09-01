@@ -118,7 +118,7 @@ h1 {
 .section-heading h2{font-size:36px;line-height:1.1;margin:5px 0 10px;letter-spacing:-1px}
 .section-heading p{color:var(--muted);margin:0}
 .section-dark .section-heading p{color:#cbd2df}
-/* --- TARJETAS DE CATEGORÍA CON IMAGEN Y DEGRADADO --- */
+/* --- TARJETAS DE CATEGORÍA CON IMÁGENES MÁS CLARAS --- */
 .category-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -128,7 +128,7 @@ h1 {
 .category-card {
   border: 0;
   border-radius: 18px;
-  aspect-ratio: 1 / 1; /* O puedes quitarlo si prefieres tarjetas rectangulares */
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,61 +143,60 @@ h1 {
   color: #ffffff;
 }
 
-/* EFECTO HOVER */
 .category-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 32px rgba(16, 23, 42, 0.25);
 }
 
-/* IMÁGENES DE FONDO CON DEGRADADO OSCURO */
+/* IMÁGENES CON DEGRADADO MÁS SUAVE Y CLARO */
 
 /* 1. Seguridad y Salud */
 .category-card:nth-child(1) {
-  background: linear-gradient(180deg, rgba(16, 23, 42, 0.55) 0%, rgba(16, 23, 42, 0.88) 100%),
+  background: linear-gradient(180deg, rgba(16, 23, 42, 0.25) 0%, rgba(16, 23, 42, 0.65) 100%),
               url('assets/seguridad-salud.jpg') center/cover no-repeat;
 }
 
 /* 2. Convivencia y Respeto */
 .category-card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(16, 23, 42, 0.55) 0%, rgba(16, 23, 42, 0.88) 100%),
+  background: linear-gradient(180deg, rgba(16, 23, 42, 0.25) 0%, rgba(16, 23, 42, 0.65) 100%),
               url('assets/convivencia.jpg') center/cover no-repeat;
 }
 
 /* 3. Seguridad Vial */
 .category-card:nth-child(3) {
-  background: linear-gradient(180deg, rgba(16, 23, 42, 0.55) 0%, rgba(16, 23, 42, 0.88) 100%),
+  background: linear-gradient(180deg, rgba(16, 23, 42, 0.25) 0%, rgba(16, 23, 42, 0.65) 100%),
               url('assets/seguridad-vial.jpg') center/cover no-repeat;
 }
 
 /* 4. Relaciones Laborales */
 .category-card:nth-child(4) {
-  background: linear-gradient(180deg, rgba(16, 23, 42, 0.55) 0%, rgba(16, 23, 42, 0.88) 100%),
+  background: linear-gradient(180deg, rgba(16, 23, 42, 0.25) 0%, rgba(16, 23, 42, 0.65) 100%),
               url('assets/relaciones-laborales.jpg') center/cover no-repeat;
 }
 
-/* ESTILOS DE LOS TEXTOS E ICONOS DENTRO DE LA TARJETA */
+/* ESTILOS DE TEXTOS E ICONOS (CON SOMBRAS PARA GARANTIZAR LECTURA) */
 .category-card .icon,
 .category-card .svg-icon {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 12px;
-  color: #ee7600; /* Naranja de Yilcoque */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ff9b43; /* Naranja encendido para resaltar sobre fotos claras */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 .category-card strong {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.25;
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0,0,0,0.8);
 }
 
 .category-card small {
   margin-top: 8px;
-  color: #e2e8f0;
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 500;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 .info-split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
 .info-split img{width:100%;border-radius:4px;display:block}
