@@ -477,3 +477,10 @@ a.floating-wa svg {
   box-shadow: none !important;
   background: transparent !important;
 }
+/* Limpiar sombras y mantener el texto naranja nítido */
+.section-subtitle {
+  color: #f26522; /* Color naranja institucional */
+  text-shadow: none !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
