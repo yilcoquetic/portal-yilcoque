@@ -252,8 +252,38 @@ footer strong{color:white}
 }
 
 /* Actualización visual V4 */
-.svg-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
-.svg-icon svg{width:52px;height:52px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.svg-icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+/* Aplica solo a los iconos vectoriales de líneas (Categorías), no a las redes sociales */
+.svg-icon svg {
+  width: 52px;
+  height: 52px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* --- REGLAS DE CORRECCIÓN PARA ICONOS DE REDES Y WHATSAPP --- */
+.help-icon svg,
+.floating-wa svg {
+  stroke: none !important; /* Desactiva el borde general */
+  fill: currentColor !important; /* Fuerza el relleno oficial */
+}
+
+/* Excepción para el icono de la Web oficial que sí usa líneas */
+.help-card.web .help-icon svg {
+  fill: none !important;
+  stroke: currentColor !important;
+}
 /* --- SECCIÓN AYUDA Y CONTACTO PROFESIONAL --- */
 .help-grid {
   display: grid;
