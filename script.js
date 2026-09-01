@@ -1,4 +1,3 @@
-
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 if(menuBtn){
@@ -39,6 +38,39 @@ document.addEventListener("click", e=>{
   }
   if(e.target.id === "docModal") closeDocument();
 });
-document.addEventListener("keydown", e=>{
-  if(e.key === "Escape") closeDocument();
+
+/* --- CARRUSEL AUTOMÁTICO DE IMÁGENES (5 SEG) --- */
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  
+  if (!slides.length) return;
+  
+  let currentIndex = 0;
+  const intervalTime = 5000;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  let slideInterval = setInterval(nextSlide, intervalTime);
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      showSlide(currentIndex);
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, intervalTime);
+    });
+  });
 });
