@@ -22,10 +22,16 @@ button{font:inherit}
 .nav{display:flex;gap:30px;align-items:center;font-size:14px;color:#4b5565}
 .nav a:hover{color:var(--orange)}
 .menu-btn{display:none;border:0;background:none;font-size:25px;color:var(--navy);cursor:pointer}
-/* --- SECCIÓN PRINCIPAL (HERO) CON IMAGEN DE FONDO --- */
+/* --- SECCIÓN PRINCIPAL (HERO) - YILCOQUE S.A.S. --- */
 .hero {
-  min-height: 510px;
-  background: linear-gradient(rgba(16, 23, 42, 0.75), rgba(16, 23, 42, 0.75)), 
+  min-height: 520px;
+  /* Degradado suave de izquierda a derecha para no oscurecer el centro de la imagen */
+  background: linear-gradient(
+                to right, 
+                rgba(16, 23, 42, 0.72) 0%, 
+                rgba(16, 23, 42, 0.45) 50%, 
+                rgba(16, 23, 42, 0.10) 100%
+              ), 
               url('assets/fondo-principal.jpg') center/cover no-repeat;
   color: #ffffff;
   display: flex;
@@ -42,34 +48,64 @@ button{font:inherit}
   padding: 70px 0;
 }
 
+/* Subtítulo superior en tono naranja vibrante */
 .eyebrow {
   font-size: 12px;
   letter-spacing: 1.8px;
   font-weight: 800;
   margin: 0 0 12px;
-  color: #ffffff; /* Cambiado a blanco */
+  color: #ee7600; /* Naranja institucional */
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .eyebrow.dark {
-  color: #ffffff; /* Cambiado a blanco */
+  color: #ee7600;
 }
 
+/* Título principal en blanco brillante con sombra para alta legibilidad */
 h1 {
   font-size: clamp(42px, 6vw, 72px);
   line-height: .96;
   margin: 0 0 25px;
   letter-spacing: -2.5px;
-  color: #ffffff; /* Asegurado en blanco */
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* Texto descriptivo */
 .hero-text {
   max-width: 560px;
-  color: #ffffff; /* Cambiado a blanco */
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 30px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Ocultar la ilustración y figuras anteriores */
+/* Botón estilizado */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 23px;
+  border-radius: 12px;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background: var(--orange, #ee7600);
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #d96500;
+}
+
+/* Ocultar elementos antiguos */
 .hero-art, .sun, .mountain, .ground {
   display: none;
 }
